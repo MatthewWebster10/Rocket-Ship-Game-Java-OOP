@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=MediumButton
+comment0.text=\r\n\ Button\ for\ user\ choice\ of\ the\ medium\ difficulty\ level\r\n\ \r\n\ @Matthew\ Webster\r\n\ @09-Apr-2017\ \r\n
+comment1.params=
+comment1.target=MediumButton()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ MediumButton\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ mediumButtonOn()
+comment3.text=\r\n\ This\ method\ contains\ what\ happens\r\n\ when\ the\ button\ is\ turned\ on\r\n
+comment4.params=
+comment4.target=void\ mediumButtonOff()
+comment4.text=\r\n\ This\ method\ contains\ what\ happens\r\n\ when\ the\ button\ is\ off\r\n
+comment5.params=
+comment5.target=void\ buttonToggle()
+comment5.text=\r\n\ This\ method\ toggles\ the\ button\ on\ or\ off\r\n\ based\ on\ conditions\r\n
+numComments=6

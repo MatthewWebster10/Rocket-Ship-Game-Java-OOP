@@ -1,0 +1,112 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * This is the world class for this program
+ * This world is supposed to be Space where a rocket can be found
+ * @Matthew Webster
+ * @05-Mar-2017
+ */
+public class Space extends World
+{
+    //Global Variables
+    int gameTime = 0;
+    /**
+     * Constructor for objects of class Space.
+     */
+    public Space()
+    {    
+        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
+        super(600, 400, 1, false);
+        addObject(new Button(), 500, 300);
+        addObject(new Instruction(), 300, 200);
+        resetStaticVariable();
+        //Initializing the Rocket
+        Rocket Rocket = new Rocket();
+        addObject(Rocket,100, 250);
+
+        //Three rocks initialized
+        randomRocks(1);
+        //Scoreboard is initialized
+        Score scoreCount = new Score();
+        addObject(scoreCount, 300, 370);
+
+        //sets paint order to avoid visual confusion
+        setPaintOrder(Button.class, Instruction.class,Rocket.class, Rock.class, Score.class);
+
+        gameTime = 0;
+
+    }
+
+    /**
+     * This method is active throughout the course of execution
+     * Increases game clock
+     */
+    public void act()
+    {
+        if (Button.buttonState == true && Rock.rocksDestroyed < 6){
+            Actor Timer = new Timer();
+            gameTime += 1;
+            if (getObjects(Timer.class).isEmpty()){
+                addObject(Timer, 100, 100);
+            }
+        }
+        //deals with the start button's mouse configurations
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        //searching for the button and the mouse
+        if (mouse != null){
+            Actor currentActor = mouse.getActor();
+            if (currentActor != null){
+                if (currentActor.getClass() == Button.class){
+                    Button currentButton = (Button) currentActor;
+                    int mouseClickCount = mouse.getClickCount();
+                    if (mouseClickCount == 1){
+                        currentButton.buttonToggle();
+                    }
+                    else{
+
+                    }
+                }
+            }
+        }
+
+        if (getTime() >= 30*60){//30 second limit
+            //restart world
+            Greenfoot.setWorld(new Space());
+            Greenfoot.stop();
+
+        }
+    }
+
+    /**
+     * This method returns gameTime.
+     * Can be called anywhere if needed. 
+     */
+    public int getTime()
+    {
+        return gameTime;
+    }
+
+    /**
+     * Deals with randomizing the position of the rocks
+     * can be customized to populate the world with more rocks. 
+     */
+    public void randomRocks(int howMany)
+    {
+        for(int i=0; i<howMany; i++) {
+            Rock SpaceRock = new Rock();
+            int x = Greenfoot.getRandomNumber(getWidth());
+            int y = Greenfoot.getRandomNumber(getHeight());
+            addObject(SpaceRock, x, y);
+        }
+    }
+
+    /**
+     * In this program, static variables are needed for proper execution
+     * In this method, it resets the static variables
+     */
+    private void resetStaticVariable()
+    {
+        Rock.rocksDestroyed = 0;
+        Button.buttonState = false;
+    }
+}

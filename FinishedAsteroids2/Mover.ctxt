@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Mover
+comment0.text=\r\n\ Has\ the\ foundation\ of\ all\ things\r\n\ that\ move\ in\ the\ program's\ execution\r\n\ @Matthew\ Webster\r\n\ @05-Mar-2017\r\n
+comment1.params=
+comment1.target=Mover()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ Mover\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+comment3.params=
+comment3.target=void\ moveSteadily()
+comment3.text=\r\n\ This\ function\ allows\ the\ mover\ to\ wrap\ around\ the\ wall\ when\ it\ goes\ through\ the\ wall.\ \ \r\n
+comment4.params=
+comment4.target=void\ justThroughWall()
+comment4.text=\r\n\ Rocket\ movement\ isn't\ constant\ at\ all\ times.\r\n\ This\ method\ allows\ rocket\ to\ go\ wrap\ around\ the\ world\ while\r\n\ not\ being\ given\ a\ constant\ movement.\ \r\n
+numComments=5

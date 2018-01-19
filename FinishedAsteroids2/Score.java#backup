@@ -1,0 +1,33 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * This class declares score image 
+ * The score will be based on the amount of rocks destroyed
+ * Also celebrates getting all rocks
+ * @Matthew Webster 
+ * @05-Mar-2017
+ */
+public class Score extends Actor
+{
+   
+    /**
+     * Deals with the score interpretation on the screen. 
+     */
+    public void act() 
+    {
+       if (Space.gameChosen == true)
+       {
+                if (Rocket.RocksDestroyed <= 3)
+           {    //Tells you how many rocks destroyed so far 
+               setImage(new GreenfootImage("Score: "+ Rocket.RocksDestroyed , 50, Color.WHITE, Color.BLACK));
+           }
+           
+           if(Rocket.RocksDestroyed == 3)
+           {    //Compliments driving skills
+                setImage(new GreenfootImage("Nice Driving Skills " , 50, Color.WHITE, Color.BLACK));
+           }
+       }
+       
+    }    
+   
+}

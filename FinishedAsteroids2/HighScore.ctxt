@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=HighScore
+comment0.text=\r\n\ Deals\ with\ the\ display\ of\ the\ High\ score\r\n\ \r\n\ @Matthew\ Webster\r\n\ @14-Apr-2017\r\n
+comment1.params=
+comment1.target=HighScore()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ do\ whatever\ the\ HighScore\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=3

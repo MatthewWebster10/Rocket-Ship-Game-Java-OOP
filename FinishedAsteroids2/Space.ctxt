@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Space
+comment0.text=\r\n\ This\ is\ the\ world\ class\ for\ this\ program\r\n\ This\ world\ is\ supposed\ to\ be\ Space\ where\ a\ rocket\ can\ be\ found\r\n\ @Matthew\ Webster\r\n\ @05-Mar-2017\r\n
+comment1.params=
+comment1.target=Space()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Space.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ This\ method\ is\ active\ throughout\ the\ course\ of\ execution\r\n\ Increases\ game\ clock\r\n
+comment3.params=
+comment3.target=int\ getTime()
+comment3.text=\r\n\ This\ method\ returns\ gameTime.\r\n\ Can\ be\ called\ anywhere\ if\ needed.\ \r\n
+comment4.params=howMany
+comment4.target=void\ randomRocks(int)
+comment4.text=\r\n\ Deals\ with\ randomizing\ the\ position\ of\ the\ rocks\r\n\ can\ be\ customized\ to\ populate\ the\ world\ with\ more\ rocks.\ \r\n
+comment5.params=
+comment5.target=void\ resetStaticVariable()
+comment5.text=\r\n\ In\ this\ program,\ static\ variables\ are\ needed\ for\ proper\ execution\r\n\ In\ this\ method,\ it\ resets\ the\ static\ variables\r\n
+comment6.params=
+comment6.target=void\ resetOption()
+comment6.text=\r\n\ This\ method\ makes\ the\ reset\ button\r\n\ and\ deals\ with\ its\ mouse\ clicking\ functionality\r\n
+comment7.params=
+comment7.target=void\ timer()
+comment7.text=\r\n\ The\ timer\ for\ the\ game\r\n
+numComments=8
